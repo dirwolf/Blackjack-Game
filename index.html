@@ -9,9 +9,77 @@
     </head>
 
     <body>
-        <!-- <img class ="imge1" src="D:\Javascript\js exercise.js\jackgame">
-        <img class ="imge2" src="D:\Javascript\js exercise.js\jackgame"> -->
-        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div class="header">
+            <h1>Welcome to Blackjack Game</h1>
+        </div>
+        <div class="separator"></div>
+        <div class="container">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li><strong>Goal:</strong> Compete against the dealer to get closer to 21 without going over. A "bust" or "break" occurs if a player's hand exceeds 21, resulting in a loss.</li>
+                <li><strong>Cards:</strong>
+                    <ul>
+                        <li>Number cards (2–10): Face value.</li>
+                        <li>Face cards (Jack, Queen, King): Worth 10.</li>
+                        <li>Aces: Worth 1 or 11.</li>
+                    </ul>
+                </li>
+                <li><strong>Dealing:</strong>
+                    <ul>
+                        <li>Players place bets.</li>
+                        <li>Each player and the dealer are dealt two cards.</li>
+                        <li>Player cards: Face up.</li>
+                        <li>Dealer cards: One face up, one face down.</li>
+                        <li>Cards are laid out diagonally to show both numbers.</li>
+                    </ul>
+                </li>
+                <li><strong>Play:</strong>
+                    <ul>
+                        <li>Players can "hit" (draw more cards) or "stand" (keep their hand).</li>
+                        <li>Dealer rules:
+                            <ul>
+                                <li>Total 17 or more: Stand.</li>
+                                <li>Total 16 or under: Draw until 17 or more.</li>
+                                <li>Ace: Count as 11 if it brings total to 17 or more, otherwise count as 1.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Winning:</strong>
+                    <ul>
+                        <li>"Blackjack" (first two cards add up to 21): Immediate win, unless dealer also has blackjack (tie).</li>
+                        <li>Dealer busts: All remaining player hands win.</li>
+                        <li>Dealer doesn't bust:
+                            <ul>
+                                <li>Player hand higher than dealer: Win.</li>
+                                <li>Player hand lower than dealer: Lose.</li>
+                            </ul>
+                        </li>
+                        <li>Tie: Bets returned without adjustment.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="game">
+            <img src="./cards/luck.jpg" class="luck-image" alt="Luck Image">
+            <div class="game-content">
+                <h2>Dealer: <span id="dealer-sum"></span></h2>
+                <div id="dealer-cards">
+                    <img id="hidden" src="./cards/BACK.png">
+                </div>
+
+                <h2>You: <span id="your-sum"></span></h2>
+                <div id="your-cards"></div>
+
+                <br>
+                <button id="hit">Hit</button>
+                <button id="stay">Stay</button>
+                <div id="results" class="message"></div>
+            </div>
+        </div>
+        
+        <!-- <h2>Dealer: <span id="dealer-sum"></span></h2>
         <div id="dealer-cards">
             <img id="hidden" src="./cards/BACK.png">
         </div>
@@ -22,6 +90,7 @@
         <br>
         <button id="hit">Hit</button>
         <button id="stay">Stay</button>
-        <p id="results"></p>
+        <div id="results" class="message"></div> -->
+        </div>
     </body>
 </html>
